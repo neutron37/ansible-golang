@@ -1,5 +1,20 @@
 ---
-go_tarball: "go1.8.1.linux-amd64.tar.gz"
-go_tarball_checksum: "sha256:a579ab19d5237e263254f1eac5352efcf1d70b9dacadb6d6bb12b0911ede8994"
-go_version_target: "go version go1.8.1 linux/amd64"
-set_go_path: true
+# See https://golang.org/dl/ for possible values
+# Platform: linux, darwin, freebsd, windows
+golang_platform: linux
+# ISA: amd64, armv6l, arm64, 386, ppc64le
+golang_isa: armv6l
+# Version: 1.12.4, 1.8.7, etc.
+golang_version: 1.12.4
+
+# Checksum: See xml at https://storage.googleapis.com/golang
+golang_tarball_checksum: "sha256:c43457b6d89016e9b79b92823003fd7858fb02aea22b335cfd204e0b5be71d92"
+
+# Version: For comparison with output of 'go version'
+#   Examples:
+#     'go version go1.8.1 linux/amd64'
+#     'go version go1.8.1 linux/arm'
+golang_target_version: "go version go1.12.4 linux/arm"
+
+# Set GOPATH for all users
+golang_set_go_path: true

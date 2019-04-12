@@ -1,2 +1,3 @@
 ---
-go_download_location: "https://storage.googleapis.com/golang/{{ go_tarball }}"
+golang_tarball: "go{{ golang_version }}.{{ golang_platform }}-{{ golang_isa }}.tar.gz"
+golang_download_location: "https://storage.googleapis.com/golang/{{ golang_tarball }}"

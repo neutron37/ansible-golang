@@ -5,6 +5,6 @@
   register: go_version
   changed_when: false
 
-- name: Main | Install go conditionally
+- name: Main | Install Go if Go is not yet installed or not the desired version
   include_tasks: install_go.yml
-  when: go_version is failed or go_version.stdout != go_version_target
+  when: go_version is failed or go_version.stdout != golang_target_version
