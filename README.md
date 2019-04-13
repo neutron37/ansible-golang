@@ -8,9 +8,9 @@ Role Variables
 
 All of these variables are optional and should only be changed if you need to install a different version of Go (e.g. if you are installing on FreeBSD, or if you need to use an earlier release.
 
-`golang_platform`: The operating system to install to. Valid options are linux, darwin, freebsd, windows. See the [Go Downloads page](https://golang.org/dl/).
+`golang_platform`: The operating system to install to. Valid options are linux, darwin, freebsd, windows.
 
-`golang_isa`: The instruction set to install. Valid options are amd64, armv6l, arm64, 386, ppc64le. See the [Go Downloads page](https://golang.org/dl/).
+`golang_isa`: The instruction set to install. Valid options are amd64, armv6l, arm64, 386, ppc64le.
 
 `golang_version`: The version you want to install. A list of options can be found on the [Go Downloads page](https://golang.org/dl/).
 
