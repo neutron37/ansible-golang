@@ -26,3 +26,10 @@
     src: go-path.sh
     dest: /etc/profile.d
   when: golang_set_go_path
+
+- name: debian | Removing distribution's go
+  apt:
+    name: ['golang-go']
+    state: absent
+  become: true
+  when: ansible_os_family == "Debian"
